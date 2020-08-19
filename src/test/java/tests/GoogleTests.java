@@ -13,8 +13,8 @@ class GoogleTests {
     void selenideSearchTest() {
         open("https://google.com");
 
-        $(byName("q")).val("Selenide").pressEnter(); // Ввести Selenide в поиск
+        $(byName("q")).val("Selenide").pressEnter(); // Ввести "Selenide" в поиск
 
-        $("div#center_col").shouldHave(text("selenide.org")); // Selenide появился в результатах поиска
+        $("div#center_col").shouldHave(text("selenide.org")); // "selenide.org" появился в результатах поиска
     }
 }
