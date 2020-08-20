@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.open;
 class GoogleTests {
     @Test
     void selenideSearchTest() {
-        open("https://google.com");
+        open("https://google.com/");
 
         $(byName("q")).val("Selenide").pressEnter(); // Ввести "Selenide" в поиск
 
